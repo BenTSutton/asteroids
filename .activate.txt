@@ -1,0 +1,2 @@
+source venv/bin/activate
+Paste above to use venv
