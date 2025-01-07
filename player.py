@@ -1,5 +1,6 @@
 from circleshape import *
 from constants import PLAYER_RADIUS, PLAYER_TURN_SPEED, PLAYER_SPEED
+from shot import *
 class Player(CircleShape):
     def __init__(self, x, y):
         super().__init__(x,y,PLAYER_RADIUS)
@@ -34,3 +35,5 @@ class Player(CircleShape):
             self.move(dt)
         if keys[pygame.K_s]:
             self.move(-1 * dt)
+    def shoot(self, dt):
+        bullet = 

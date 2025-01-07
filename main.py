@@ -5,6 +5,7 @@ from constants import *
 from player import *
 from asteroid import *
 from asteroidfield import *
+from shot import *
 
 def main():
     print("Starting asteroids!")
@@ -23,6 +24,8 @@ def main():
     player = Player(SCREEN_WIDTH/2, SCREEN_HEIGHT/2)
     clock = pygame.time.Clock()
     asteroidfield = AsteroidField()
+    shots = Shot()
+
     dt = 0
 
     while True:
